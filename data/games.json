@@ -1,0 +1,42 @@
+[
+  {
+    "id": "game-1",
+    "title": "Crystal Tycoon",
+    "cover": "",
+    "video": "",
+    "link": "",
+    "summary": "Resource mining, upgrades, and trading."
+  },
+  {
+    "id": "game-2",
+    "title": "Neo Obby",
+    "cover": "",
+    "video": "",
+    "link": "",
+    "summary": "Parkour with polish and smooth checkpoints."
+  },
+  {
+    "id": "game-3",
+    "title": "Arena Rush",
+    "cover": "",
+    "video": "",
+    "link": "",
+    "summary": "Wave combat with abilities and drops."
+  },
+  {
+    "id": "game-4",
+    "title": "Build & Battle",
+    "cover": "",
+    "video": "",
+    "link": "",
+    "summary": "Fast build PVP with destructible blocks."
+  },
+  {
+    "id": "game-5",
+    "title": "Cyber Runner",
+    "cover": "",
+    "video": "",
+    "link": "",
+    "summary": "Endless runner; daily challenges and leaderboards."
+  }
+]

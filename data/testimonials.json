@@ -1,0 +1,30 @@
+[
+  {
+    "quote": "Fast, communicative, and the code was super clean. Delivered exactly what we needed.",
+    "author": "Game Studio Owner",
+    "role": "Commission",
+    "rating": 5,
+    "source": ""
+  },
+  {
+    "quote": "UI felt so polished. Players noticed the quality instantly.",
+    "author": "Indie Dev",
+    "role": "UI/UX",
+    "rating": 5,
+    "source": ""
+  },
+  {
+    "quote": "Handled data and monetization like a pro. Revenue went up after release.",
+    "author": "Tycoon Team Lead",
+    "role": "Systems",
+    "rating": 5,
+    "source": ""
+  },
+  {
+    "quote": "Great optimization pass—FPS improved without breaking anything.",
+    "author": "Community Creator",
+    "role": "Performance",
+    "rating": 5,
+    "source": ""
+  }
+]

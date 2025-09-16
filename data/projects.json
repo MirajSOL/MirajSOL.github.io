@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sample-1",
+    "title": "Sample Project One",
+    "date": "2024-12-01",
+    "summary": "Quick summary of what this project is. Add 1–2 sentences.",
+    "tags": ["Scripting", "UI", "Systems"],
+    "cover": "",
+    "video": "",
+    "role": "Scripter",
+    "tools": ["Luau", "Knit"],
+    "links": { "roblox": "", "github": "" },
+    "body": [
+      "Describe the problem, your approach, and the result.",
+      "Add bullet points or paragraphs. Include metrics if you have them."
+    ]
+  },
+  {
+    "id": "sample-2",
+    "title": "Complex Economy & Shop",
+    "date": "2025-01-10",
+    "summary": "Data-backed shop with products, passes, and offers.",
+    "tags": ["Monetization", "Data", "Systems"],
+    "cover": "",
+    "video": "",
+    "role": "Systems",
+    "tools": ["Luau", "ProfileService"],
+    "links": { "roblox": "", "github": "" },
+    "body": [
+      "Supports sales/rotations and purchase confirmations.",
+      "Plug configuration for quick changes."
+    ]
+  },
+  {
+    "id": "sample-3",
+    "title": "UI Framework",
+    "date": "2025-02-05",
+    "summary": "Reusable UI components and animations.",
+    "tags": ["UI", "Design", "Tools"],
+    "cover": "",
+    "video": "",
+    "role": "UI/UX",
+    "tools": ["Roact"],
+    "links": { "roblox": "" },
+    "body": [
+      "HUD, menus, modals with consistent theming.",
+      "Optimized for performance and readability."
+    ]
+  }
+]
