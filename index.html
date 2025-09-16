@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mirsol — Roblox Developer Portfolio</title>
+  <meta name="description" content="Roblox scripter & systems designer. Smooth gameplay, scalable systems, clean UI. Available for commissions." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#hero" aria-label="Mirsol home">
+        <span class="brand-logo">M</span>
+        <span class="brand-text">Mirsol</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul id="navMenu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">My Work</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#terms">Terms</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="socials">
+          <a href="https://discord.com" class="icon-btn" aria-label="Discord" title="Discord">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.369A19.791 19.791 0 0 0 16.558 3c-.197.36-.42.848-.574 1.23a18.33 18.33 0 0 0-7.968 0C7.862 3.848 7.64 3.36 7.442 3A19.736 19.736 0 0 0 3.683 4.37C1.53 7.64.94 10.79 1.155 13.9a19.955 19.955 0 0 0 6.08 3.078c.246-.34.466-.703.657-1.087a12.86 12.86 0 0 1-1.03-.398c.086-.063.17-.13.252-.197A14.07 14.07 0 0 0 9 16.064c.62.092 1.273.138 1.944.138.671 0 1.324-.046 1.944-.138a14.03 14.03 0 0 0 1.888-.768c.083.068.167.134.252.197-.335.14-.683.274-1.03.398.19.384.41.747.656 1.087a19.955 19.955 0 0 0 6.08-3.078c.31-4.324-.55-7.442-2.117-9.433ZM9.75 13.5c-.86 0-1.563-.84-1.563-1.875 0-1.036.703-1.875 1.563-1.875s1.562.84 1.562 1.875c0 1.036-.703 1.875-1.562 1.875Zm4.5 0c-.86 0-1.562-.84-1.562-1.875 0-1.036.703-1.875 1.562-1.875s1.563.84 1.563 1.875c0 1.036-.703 1.875-1.563 1.875Z" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@MirsolYT" class="icon-btn" aria-label="YouTube" title="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a4 4 0 0 0-2.8-2.8C18.9 3 12 3 12 3s-6.9 0-8.7.4A4 4 0 0 0 .5 6.2 41.7 41.7 0 0 0 0 12c0 5.8.5 5.8.5 5.8a4 4 0 0 0 2.8 2.8C5.1 21 12 21 12 21s6.9 0 8.7-.4a4 4 0 0 0 2.8-2.8S24 17.8 24 12s-.5-5.8-.5-5.8ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.roblox.com/users/272664542/profile" class="icon-btn" aria-label="Roblox" title="Roblox">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 3 18-1.5L22.5 19.5 4.5 21 3 3Zm6.6 6.6 4.8-.4.4 4.8-4.8.4-.4-4.8Z" fill="currentColor"/></svg>
+          </a>
+          <a href="https://x.com/MirajSOLX" class="icon-btn" aria-label="X (Twitter)" title="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2H21l-6.51 7.44L22.5 22h-6.9l-5.4-7.02L3.9 22H1l7.01-8L1.5 2h6.9l4.86 6.32L18.244 2Zm-1.2 18h2.07L7.05 4h-2.1l12.09 16Z" fill="currentColor"/></svg>
+          </a>
+          <a href="https://github.com/MirajSOL" class="icon-btn" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12 11.5 11.5 0 0 0 8 23.1c.37.07.5-.16.5-.35v-1.27c-3.35.74-4.06-1.62-4.06-1.62-.34-.88-.84-1.12-.84-1.12-.7-.48.05-.47.05-.47.77.06 1.18.79 1.18.79.69 1.17 1.8.83 2.24.63.07-.51.27-.83.49-1.03-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.24a11.4 11.4 0 0 1 6 0C16.14 4.7 17.15 5 17.15 5c.66 1.65.25 2.87.12 3.17.77.85 1.24 1.93 1.24 3.25 0 4.63-2.8 5.66-5.47 5.96.28.24.53.72.53 1.46v2.16c0 .19.13.42.5.35A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z" fill="currentColor"/></svg>
+          </a>
+        </div>
+
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+          <span class="sun">☀️</span><span class="moon">🌙</span>
+        </button>
+
+        <!-- Mobile: ≡ on the right -->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Menu">≡</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="neon-rainbow">Roblox Scripter & Systems Designer</h1>
+          <p class="lead">I build smooth gameplay, scalable systems, and clean UI. Available for commissions.</p>
+          <div class="hero-ctas">
+            <a href="#work" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-ghost">Hire Me</a>
+          </div>
+          <div class="hero-social-inline">
+            <span class="badge">GMT+1</span>
+            <span class="badge gold">Open for commissions</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="cubes">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-grid" aria-hidden="true"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container cols">
+      <div class="about-avatar tilt"> <img id="avatarImg" class="avatar-img" src="assets/avatar/mirsol.png" alt="Mirsol Roblox avatar" referrerpolicy="no-referrer"> 
+      </div>
+        <div class="about-content">
+          <h2>About Mirsol</h2>
+          <p>I’m a Roblox developer focused on scripting, systems design, UI/UX, and monetization. I love turning ideas into polished, performant experiences—whether it’s a single feature or a full game loop.</p>
+          <ul class="about-highlights">
+            <li>Luau + Roblox Studio power user</li>
+            <li>Clean, modular systems</li>
+            <li>UI/UX that feels responsive and alive</li>
+          </ul>
+          <div class="about-badges">
+            <span class="badge">Timezone: GMT+1</span>
+            <span class="badge">Discord: <strong>mirajsol</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Work -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>My Work</h2>
+          <p>Browse commissions, systems, UI, tools, and more. Click any card to see details and video.</p>
+        </div>
+
+        <div class="controls">
+          <div class="search">
+            <input id="workSearch" type="search" placeholder="Search by title, tags, or summary…" aria-label="Search work" />
+          </div>
+          <div class="filter-chips" id="workFilters" aria-label="Filter by tag"></div>
+          <div class="controls-right">
+            <label class="select">
+              <span class="label">Sort</span>
+              <select id="workSort" aria-label="Sort work">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="az">A–Z</option>
+                <option value="za">Z–A</option>
+              </select>
+            </label>
+            <div class="view-toggle" role="group" aria-label="View mode">
+              <button id="viewGrid" class="icon-btn active" title="Grid view" aria-pressed="true">▦</button>
+              <button id="viewList" class="icon-btn" title="List view" aria-pressed="false">☰</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="workCount" class="muted small">Loading projects…</div>
+        <div id="workGrid" class="cards grid-work" data-view="grid" aria-live="polite"></div>
+        <div class="center">
+          <button id="workLoadMore" class="btn btn-ghost" hidden>Load more</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Games -->
+    <section id="games" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Games</h2>
+          <p>Top 5 games I’ve made. Click to view details and trailer.</p>
+        </div>
+        <div id="gamesGrid" class="cards grid-games" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Reviews / Testimonials -->
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>What Clients Say</h2>
+          <p>Feedback from commissioners and collaborators.</p>
+        </div>
+
+        <div class="reviews-wrap">
+          <button class="rev-btn prev" id="revPrev" aria-label="Previous">‹</button>
+          <div id="reviewsTrack" class="reviews-track" aria-live="polite">
+            <!-- Injected by JS -->
+          </div>
+          <button class="rev-btn next" id="revNext" aria-label="Next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Pricing</h2>
+          <p>Examples to help you scope. Final quote after a quick brief on Discord.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="price-card tilt">
+            <h3>Starter</h3>
+            <p class="muted">Small scripts, bug fixes, UI tweaks</p>
+            <ul>
+              <li>1 feature or 1–2 UI screens</li>
+              <li>Light revisions</li>
+              <li>Fast turnaround</li>
+            </ul>
+            <div class="price">From <span class="gold">5$ or 1k Robux(After Tax)</span></div>
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+          </div>
+          <div class="price-card tilt featured">
+            <div class="badge gold">Popular</div>
+            <h3>Pro</h3>
+            <p class="muted">Core systems or larger features</p>
+            <ul>
+              <li>Systems (inventory, quests, economy)</li>
+              <li>UI + data integration</li>
+              <li>Progress updates</li>
+            </ul>
+            <div class="price">From <span class="gold">15$ or 4.5k Robux(After Tax)</span></div>
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+          </div>
+          <div class="price-card tilt">
+            <h3>Premium</h3>
+            <p class="muted">End-to-end gameplay + monetization</p>
+            <ul>
+              <li>Design, implementation, polish</li>
+              <li>Playtesting + iteration</li>
+              <li>Launch support if I own a percentage.</li>
+            </ul>
+            <div class="price">Custom <span class="gold">Quote</span></div>
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process (kept, but not in the nav) -->
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>How We’ll Collaborate</h2>
+          <p>Working with me is straightforward and efficient.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step tilt">
+            <div class="icon-circle"><span class="icon">💬</span></div>
+            <h3>1. Initial Contact</h3>
+            <p>DM me on Discord (<strong>mirajsol</strong>). We’ll discuss your project, payment, and timeline.</p>
+          </div>
+          <div class="process-step tilt">
+            <div class="icon-circle"><span class="icon">🔄</span></div>
+            <h3>2. Regular Updates</h3>
+            <p>Daily/bi‑daily/weekly updates—screenshots, clips, or test builds based on your preference.</p>
+          </div>
+          <div class="process-step tilt">
+            <div class="icon-circle"><span class="icon">💳</span></div>
+            <h3>3. Completion & Delivery</h3>
+            <p>I deliver or integrate the final product and you pay me the final amount.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills (moved below Pricing) -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>Hover or tap a block to read what I bring to your project.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-block tilt">
+            <h3>Luau Scripting</h3>
+            <p>Clean, modular code with strong patterns and readability.</p>
+          </div>
+          <div class="skill-block tilt">
+            <h3>Systems Design</h3>
+            <p>Inventory, economy, progression, matchmaking, and retention loops.</p>
+          </div>
+          <div class="skill-block tilt">
+            <h3>UI/UX</h3>
+            <p>Responsive interfaces, tweened interactions, device-ready scaling and accessibility.</p>
+          </div>
+          <div class="skill-block tilt">
+            <h3>Data, Monetization and networking/replication</h3>
+            <p>ProfileService/Store, Replica, products, game-passes, analytics-ready.</p>
+          </div>
+          <div class="skill-block tilt">
+            <h3>Optimization</h3>
+            <p>Performance profiling, memory/GC tuning, networking efficiency. OOP.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terms -->
+    <section id="terms" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Terms & Conditions</h2>
+        </div>
+        <ul class="terms-list">
+          <li>Scope: defined in chat before work begins. Changes may affect cost/time.</li>
+          <li>Payment: 50% up-front and remainder on delivery for small commissions, larger commission payments can be discussed.</li>
+          <li>Revisions: includes reasonable rounds tied to scope; extra revisions billed.</li>
+          <li>Timeline: estimates provided after brief; delays communicated early.</li>
+          <li>Ownership: you own the final deliverables upon full payment unless we've agreed upon a percentage share in which case I also own part of it; I may showcase work (I will never leak full scripts so that your game cannot be copied) unless NDA.</li>
+          <li>Assets: client provides licensed assets or approves third‑party use. I cannot create assets for you.</li>
+          <li>NDA/Confidentiality available on request.</li>
+          <li>Refunds: I only offer refunds if the fault is on my behalf.</li>
+          <li>Delivery: model/place files or direct integration to your game.</li>
+          <li>Support: I offer bug fixes free of charge for any issues relating to work I'VE completed up to 30 days after the final delivery. Please do not expect me to do bug fixes on issues unrelated to my work, if you wish for me to do bug fixes unrelated to my work, you'll need to commission me again.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>FAQ</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>What do you need to start?</summary>
+            <p>Brief, references, features list, target audience, deadlines, and any assets or games to integrate with. Usually, the brief, features list and deadline is enough.</p>
+          </details>
+          <details>
+            <summary>How do you handle updates?</summary>
+            <p>We agree on an update cadence (daily/bi‑daily/weekly). I’ll share progress via text, clips and test builds if you desire.</p>
+          </details>
+          <details>
+            <summary>Do you do UI and code?</summary>
+            <p>Yes—UI/UX, scripting, and systems. I can coordinate with your artists or designers too.</p>
+          </details>
+          <details>
+            <summary>Can you optimize existing games?</summary>
+            <p>This depends. Usually I do not take on optimisation commissions. However, always feel free to contact me regarding this, and we can evaluate in the chat if it is something I can take on.</p>
+          </details>
+          <details>
+            <summary>What if the scope changes?</summary>
+            <p>We’ll reassess timeline/cost and confirm before continuing. I am not required to accept a scope change and I do not like when it changes but I will always consider it and usually will accept if the conditions are fair. Just be open and truthful with me and I'll do the same.</p>
+          </details>
+          <details>
+            <summary>How do payments work?</summary>
+            <p>50% up-front for larger projects, remaining balance on delivery. I prefer paypal but I also accept robux as long as you pay the tax. Percentages of the game are also accepted but this can be discussed and negotiated via discord.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Discord is the best way to reach me.</p>
+        </div>
+
+        <div class="contact-card tilt">
+          <div class="contact-main">
+            <div class="discord-tag">
+              <span class="label">Discord</span>
+              <strong id="discordHandle">mirajsol</strong>
+            </div>
+            <div class="contact-actions">
+              <button id="copyDiscord" class="btn btn-primary">Copy handle</button>
+              <a href="https://discord.com/app" class="btn btn-ghost" target="_blank" rel="noopener">Open Discord</a>
+            </div>
+          </div>
+          <div class="contact-meta">
+            <span class="badge">GMT+1</span>
+            <div class="socials">
+              <a href="https://www.youtube.com/@MirsolYT" class="icon-btn" aria-label="YouTube">▶</a>
+              <a href="https://www.roblox.com/users/272664542/profile" class="icon-btn" aria-label="Roblox">◈</a>
+              <a href="https://x.com/MirajSOLX" class="icon-btn" aria-label="X">X</a>
+              <a href="https://github.com/MirajSOL" class="icon-btn" aria-label="GitHub">GH</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal" aria-hidden="true" aria-labelledby="projectTitle" role="dialog">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="document">
+      <button class="modal-close icon-btn" aria-label="Close" data-close-modal>✕</button>
+      <div class="modal-media" id="projectMedia"></div>
+      <div class="modal-body">
+        <h3 id="projectTitle">Project Title</h3>
+        <div id="projectTags" class="tags"></div>
+        <p id="projectSummary" class="muted"></p>
+        <div id="projectBody" class="modal-sections"></div>
+        <div id="projectLinks" class="modal-links"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Modal -->
+  <div id="gameModal" class="modal" aria-hidden="true" aria-labelledby="gameTitle" role="dialog">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="document">
+      <button class="modal-close icon-btn" aria-label="Close" data-close-modal>✕</button>
+      <div class="modal-media" id="gameMedia"></div>
+      <div class="modal-body">
+        <h3 id="gameTitle">Game Title</h3>
+        <p id="gameSummary" class="muted"></p>
+        <div id="gameLinks" class="modal-links"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Mirsol. Built with HTML, CSS, and JS.</p>
+      <a href="#top" class="btn btn-ghost small">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
