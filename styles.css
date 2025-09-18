@@ -219,8 +219,7 @@ h3 { font-size: clamp(18px, 2.2vw, 20px); margin: 0 0 6px; }
 .cols { display: grid; grid-template-columns: .9fr 1.1fr; gap: 28px; align-items: center; }
 .about-avatar .avatar-img {
 width: 100%;
-height: 260px; /* match the card height /
-object-fit: cover; / fills nicely without distortion */
+aspect-ratio: 1 / 1; 
 border-radius: var(--radius-lg);
 border: 1px solid var(--line);
 background: var(--surface-2);
@@ -396,4 +395,5 @@ a:focus, button:focus, input:focus, select:focus { outline: 2px solid rgba(0,229
 }
 
 /* Utilities */
+
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
